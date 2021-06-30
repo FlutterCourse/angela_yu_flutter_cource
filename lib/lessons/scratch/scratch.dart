@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:angela_yu_flutter_cource/export.dart';
 
 class Scratch extends StatelessWidget {
   static const id = 'scratchid';
@@ -6,8 +6,13 @@ class Scratch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('Scratch')),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Scratch'),
+      ),
+      body: const Center(
+        child: Text('Scratch'),
+      ),
     );
   }
 }
