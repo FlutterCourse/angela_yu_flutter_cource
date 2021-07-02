@@ -26,8 +26,8 @@ class Main extends StatelessWidget {
     return MaterialApp(
       theme: Theme.of(context).copyWith(
         brightness: context.watch<BrightnessProvider>().brightness,
-        scaffoldBackgroundColor: context.watch<BrightnessProvider>().colorScheme().background,
-        primaryColor: context.watch<BrightnessProvider>().colorScheme().primary,
+        scaffoldBackgroundColor: context.watch<BrightnessProvider>().colorScheme.background,
+        primaryColor: context.watch<BrightnessProvider>().colorScheme.primary,
       ),
       debugShowCheckedModeBanner: false,
       localizationsDelegates: [
